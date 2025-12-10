@@ -76,7 +76,7 @@ header,.category-list{
 .container.navbar .nav-button:hover{
     background-color: var(--light-gray-color);
 }
-.container.navbar .nav-button i{
+.navbar .nav-button i{
     color:var(--black-color);
     display:flex;
     font-size: 1.5rem;
@@ -158,7 +158,8 @@ body.sidebar-hidden .main-layout .sidebar{
     height: calc(100vh - 60px);
     scrollbar-color:transparent transparent;
 }
-.sidebar .sidebar.link-container:hover{
+.sidebar .link-container:hover 
+{
       scrollbar-color:#a6a6a6 transparent;
 
 }
@@ -324,7 +325,7 @@ body.sidebar-hidden .main-layout .sidebar{
         transition: 0.2s ease;
     }
 
-    body.sidebar-hidden .main-layout sidebar{
+    body.sidebar-hidden .main-layout .sidebar{
         left:-280px;
 
     }
@@ -332,3 +333,13 @@ body.sidebar-hidden .main-layout .sidebar{
         display: flex;
     }
 }
+/* Fix huge logo in sidebar */
+.sidebar .logo-image {
+    width: 32px !important;
+    height: auto;
+}
+
+.sidebar .nav-logo .text {
+    font-size: 1.2rem;
+}
+
